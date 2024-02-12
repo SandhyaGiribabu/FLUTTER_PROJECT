@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//this is shini guys and I'm just trying to learn how this works :)
 void main() {
   runApp(const MyApp());
 }
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
 
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
-  
+
   final String title;
 
   @override
