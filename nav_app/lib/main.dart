@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nav_app/screens/bottom_bar.dart';
 
 void main() {
   runApp(const MyApp());
@@ -33,9 +34,8 @@ class LoginPageState extends State<LoginPage> {
   String _errorMessage = '';
 
   void _login() {
-
     // just a basic outline guys...idk how to create database
-    
+
     String username = _usernameController.text;
     String password = _passwordController.text;
 
@@ -50,7 +50,7 @@ class LoginPageState extends State<LoginPage> {
         // Successful login
         Navigator.pushReplacement(
           context,
-          MaterialPageRoute(builder: (context) => const HomePage()),
+          MaterialPageRoute(builder: (context) => const BottomBar()),
         );
       } else {
         // Incorrect password
@@ -86,7 +86,7 @@ class LoginPageState extends State<LoginPage> {
             const SizedBox(height: 16.0),
             TextField(
               controller: _passwordController,
-              obscureText: true, 
+              obscureText: true,
               decoration: const InputDecoration(
                 labelText: 'Password',
               ),
@@ -110,7 +110,7 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 }
-
+/*
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -176,4 +176,5 @@ class NearbyPlacesPage extends StatelessWidget {
       ),
     );
   }
-}
+  
+}*/
