@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nav_app/screens/sample.dart';
 
 import 'package:nav_app/utils/app_styles.dart';
 
@@ -46,13 +47,9 @@ class HomeScreen extends StatelessWidget {
                 const SizedBox(height: 40),
                 Container(
                   padding: const EdgeInsets.symmetric(horizontal: 12),
-                  child: Row(
+                  child: const Row(
                     children: [
-                      const Icon(Icons.search),
-                      Text(
-                        "Search",
-                        style: Styles.headLineStyle2,
-                      )
+                      BusSearchScreen(),
                     ],
                   ),
                 )
