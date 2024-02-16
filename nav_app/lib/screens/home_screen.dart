@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nav_app/screens/sample.dart';
+import 'package:nav_app/screens/busSearch.dart';
 
 import 'package:nav_app/utils/app_styles.dart';
 
